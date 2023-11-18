@@ -1,0 +1,35 @@
+/* public/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #bot-response {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
