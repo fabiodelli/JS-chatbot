@@ -2,7 +2,7 @@
 
 
 // Imposta la tua chiave API di OpenAI
-const apiKey = '-------------------------------------------------';
+const apiKey = '--------------------------------------------------';
 
 /* // URL dell'endpoint per il modello GPT-3.5
 const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions'; */
