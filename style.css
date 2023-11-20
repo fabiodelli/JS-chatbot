@@ -3,6 +3,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    height: 94vh;
   }
   
   h1 {
@@ -21,6 +22,7 @@ body {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin: 10px;
   }
   
   button:hover {
@@ -28,8 +30,42 @@ body {
   }
   
   #bot-response {
+    position: relative;
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #ddd;
+    height: 80%;
+    overflow-y: scroll;
+    
+    
+  }
+  .input{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  }
+
+  .user-message{
+    padding: 1rem;
+    background: rgb(167, 201, 167);
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .bot-message{
+    padding: 1rem;
+    background: rgb(178, 221, 224);
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px;
+    justify-self: end;
+    
   }
   
+  .box{
+    height: 20%;
+    position: relative;
+    bottom: 100;
+    left: 100;
+  }

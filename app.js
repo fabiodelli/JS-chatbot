@@ -2,7 +2,7 @@
 
 
 // Imposta la tua chiave API di OpenAI
-const apiKey = '--------------------------------------------------';
+const apiKey = '';
 
 /* // URL dell'endpoint per il modello GPT-3.5
 const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions'; */
@@ -17,6 +17,7 @@ const botResponse = document.querySelector("#bot-response")
 
 async function getMessage() {
     console.log('clicked');
+    botResponse.innerHTML += `<div class="user-message">${content.value}</div><br>`;
     const options = {
         method: 'POST',
         headers: {
@@ -30,15 +31,19 @@ async function getMessage() {
         })
     }
     try {
+        content.value= null;
          const response = await fetch('https://api.openai.com/v1/chat/completions', options)
          const data = await response.json()
          console.log(data)
-         botResponse.innerText = data.choices[0].message.content;
+        
+         botResponse.innerHTML += `<div class="bot-message">${data.choices[0].message.content}</div><br>`;
     } catch (error){
         console.error(error)
     }
 }
 
-submitButton.addEventListener('click', getMessage)
+
+
+submitButton.addEventListener('click', getMessage, )
 
 
